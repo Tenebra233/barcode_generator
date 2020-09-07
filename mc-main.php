@@ -11,3 +11,20 @@
   License: GPLv2 or later
   License URI: http://www.gnu.org/licenses/gpl-2.0.html
  */
+
+//use Itro\WpUpdaterClient\Updater;
+require_once('autoloader/autoloader.php');
+require_once "vendor/autoload.php";
+
+add_action('init', function(){
+    //    $updater = new Updater('itro-popup-premium', 'ITRO Popup Premium');
+    //    $updater->boot();
+    define('itroPopupPremiumRootPath', basename(dirname(__FILE__)) . "/");
+    define('itroPopupPremiumPath', plugins_url() . '/' . itroPopupPremiumRootPath);
+    //    load_plugin_textdomain('itro_ipp', FALSE, itroPopupPremiumRootPath . 'i18n');
+});
+
+add_action('wp_roles_init',function(){
+    
+    Itro\BarcodeGenerator\BarcodeGenerator::getInstance()->boot();
+});

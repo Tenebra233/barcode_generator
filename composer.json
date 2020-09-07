@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tecnickcom/tc-lib-barcode": "^1.16",
+        "illuminate/database": "^7.27"
+    }
+}
