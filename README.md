@@ -1,1 +1,1 @@
-# barcode_generator
+# Wordpress plugin for generating products barcodes
