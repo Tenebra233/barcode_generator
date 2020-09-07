@@ -31,7 +31,7 @@ final class BarcodeGenerator
     
     /**
      *
-     * @return NidoManager
+     * @return BarcodeGenerator
      */
     public static function getInstance()
     {

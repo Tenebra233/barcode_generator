@@ -1,5 +1,5 @@
 <?php
-namespace Itro\ItroNidoManager;
+namespace Itro\BarcodeGenerator;
 
 /**
  * An example of a general-purpose implementation that includes the optional
