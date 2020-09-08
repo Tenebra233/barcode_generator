@@ -9,5 +9,5 @@ $loader = new Itro\BarcodeGenerator\Psr4AutoloaderClass;
 $loader->register();
 
 // register the base directories for the namespace prefix
-$loader->addNamespace('Itro\ItroNidoManager', realpath(__DIR__ . '/../src/itro/barcode_generator'));
+$loader->addNamespace('Itro\BarcodeGenerator', realpath(__DIR__ . '/../src/itro/barcode_generator'));
 //$loader->addNamespace('Foo\Bar', '/path/to/packages/foo-bar/tests');

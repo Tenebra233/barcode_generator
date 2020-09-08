@@ -32,5 +32,4 @@ add_action('woocommerce_loaded', function () {
     }
     BarcodeGenerator::getInstance()->boot();
 
-
 });
